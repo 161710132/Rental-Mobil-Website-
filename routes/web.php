@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 	Route::group(['prefix'=>'adminn', 'middleware'=>['auth','role:admin']], function(){
 	Route::resource('mobil','MobilController');
-	// Route::get('daftarmobil','RentalController@daftarmobil')->name('daftarmobil');
+	Route::get('daftarmobil','RentalController@daftarmobil')->name('daftarmobil');
 	Route::resource('customer','CustomerController');
 	Route::resource('supir','SupirController');
 	Route::resource('rental','RentalController');

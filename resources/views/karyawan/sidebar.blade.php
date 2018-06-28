@@ -28,7 +28,7 @@
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('karyawan/showmobil') }}">Mobil</a>
+                  <a class="nav-link" href="{{ route('mobil.index') }}">Mobil</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ route('supir.index') }}"> Supir </a>

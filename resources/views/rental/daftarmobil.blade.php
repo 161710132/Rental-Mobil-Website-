@@ -27,8 +27,8 @@
 										<div class="card-body">
 											<div class="mx-auto d-block"></div>
 
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="{{asset('/img/'.$data->foto_mobil.'')}}" style="width: 210px; height: 170px;" alt="Card image cap">
-<h5 class="text-sm-center mt-2 mb-1"> {{ $data->nama}}</h5>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="{{asset('/img/'.$data->foto_mobil.'')}}" style="width: 220px; height: 190px;" alt="Card image cap">
+<h5 class="text-sm-center mt-2 mb-1"> {{ $data->merk}}</h5>
 <div class="location text-sm-center">
 	<i class="fa fa-dollar"></i>Harga : Rp.{{ $data->harga_sewa}}</div>
 </div>
@@ -55,6 +55,23 @@
 		</div>
 
 <!-- Form Data Sewa -->
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal Content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Rental Mobil</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="{{ route('rental.create')}}" method="post"></form>
+				<div class="panel-title pull-right"><a class="btn btn-success" href="{{ route('rental.create') }}">Rental</a>
 
+			  </div>
+			</div>
+		</div>
+		<!-- -->
+	</div>
+</div>
 <!-- End -->
 @endsection
