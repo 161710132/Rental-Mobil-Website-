@@ -31,13 +31,11 @@ class HomeController extends Controller
 
     }
 
-    public function adminDashboard()
-    {
+    public function adminDashboard(){
         return view('layouts.adminn');
     }
 
-     public function memberDashboard()
-    {
+     public function memberDashboard(){
         return view('layouts.karyawan');
     }
 }

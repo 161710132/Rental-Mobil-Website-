@@ -15,7 +15,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="daftarmobil">
               <span class="menu-title">Dashboard</span>
               <i class="mdi mdi-home menu-icon"></i>
             </a>
@@ -28,7 +28,7 @@
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('mobil.index') }}">Mobil</a>
+                  <a class="nav-link" href="{{ route('karyawan/showmobil') }}">Mobil</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ route('supir.index') }}"> Supir </a>

@@ -6,7 +6,7 @@
             <div class="nav-link">
               <div class="user-wrapper">
                 <div class="profile-image">
-                  <img src="{{ asset ('/assests/adminn/images/faces/face1.jpg')}}" alt="profile image">
+                  <img src="{{ asset ('/assests/adminn/images/faces/pic-2.png')}}" alt="profile image">
                 </div>
                 <div class="text-wrapper">
                   <p class="profile-name">Admin</p>
@@ -20,7 +20,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="daftarmobil">
               <i class="menu-icon mdi mdi-television"></i>
               <span class="menu-title">Dashboard</span>
               

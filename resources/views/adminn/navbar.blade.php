@@ -38,7 +38,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <img src="{{ asset ('/assests/adminn/images/faces/face4.jpg')}}" alt="image" class="profile-pic">
+                  <img src="{{ asset ('/assests/adminn/images/faces/pic-2.png')}}" alt="image" class="profile-pic">
                 </div>
                 <div class="preview-item-content flex-grow">
                   <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
@@ -136,8 +136,8 @@
           </li>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text">Hello, Richard V.Welsh !</span>
-              <img class="img-xs rounded-circle" src="{{ asset ('/assests/adminn/images/faces/face1.jpg')}}" alt="Profile image">{{ Auth::user()->name }}
+              <span class="profile-text">Hello</span>
+              <img class="img-xs rounded-circle" src="{{ asset ('/assests/adminn/images/faces/pic-2.png')}}" alt="Profile image">{{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0">

@@ -24,13 +24,6 @@ class KaryawanController extends Controller
         return view('karyawan.index',compact('kembali','rental','mobil','supir'));
     }
 
-    public function mobil()
-    {
-        $mobil = Mobil::all();
-        return view('karyawan.mobil', compact('mobil'));
-    }
-
-
     /**
      * Show the form for creating a new resource.
      *
@@ -60,7 +53,8 @@ class KaryawanController extends Controller
      */
     public function show($id)
     {
-        //
+        $mobil = Mobil::findOrFail($id);
+        return view('karyawan.showmobil',compact('mobil'));
     }
 
     /**

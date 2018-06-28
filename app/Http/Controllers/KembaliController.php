@@ -69,12 +69,7 @@ class KembaliController extends Controller
         // $rental->denda=$denda;
         // $rental->total_harga= $hasil * ($request->harga_mobil + $request->harga_supir);
 
-        $rental = Rental::where('id', $request->rental_id)->first();
-        $hargamobil = $rental->Mobil->harga_sewa;
-        $hargasupir = $rental->Supir->harga_sewasupir;
-        $kembali->denda = $hasil * ($hargamobil + $hargasupir);
-
-        $kembali->total_harga = $rental->total_sewa + $kembali->denda;
+        
         $kembali->rental_id = $request->rental_id;
         
         // return $kembali;
